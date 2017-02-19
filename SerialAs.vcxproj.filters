@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5cb71284-21d3-4c01-b13a-8c4bf901423f}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{17058319-2d82-4abf-892c-2b3e61b5300c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7b48a110-5c02-48c5-baa9-e882d4c66ea6}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Ass file">
+      <UniqueIdentifier>{4c91b097-13b4-41e3-9ba9-f956621c4e8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConfigPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ini.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialAs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialAsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorButton.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorComboBox.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorControl.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorEdit.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorStatic.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="CREDITSTATIC.CPP">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePro.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="MacButtons.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRichEdit.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRichEditCtrl.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgStatusBar.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="StatLink.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchStatic.cpp">
+      <Filter>Ass file</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SerialAs.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigPort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialAs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialAsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialPort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorButton.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorComboBox.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorControl.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorEdit.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorStatic.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="CREDITSTATIC.H">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePro.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="MacButtons.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRichEdit.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRichEditCtrl.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgStatusBar.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="RGB.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="StatLink.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+    <ClInclude Include="SwitchStatic.h">
+      <Filter>Ass file</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\nailoff.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SerialAs.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SerialAs.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

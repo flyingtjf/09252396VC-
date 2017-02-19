@@ -1,0 +1,318 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SerialAs.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SerialAs.ico"
+IDI_ICONCLOSED          ICON                    "res\\icon1.ico"
+IDI_ICONOPENED          ICON                    "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 344, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于串口助手1.0"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,2,142,20,20
+    DEFPUSHBUTTON   "确定",IDOK,294,159,50,14,WS_GROUP
+    LTEXT           "向作者提意见或建议，让我们共同提高!",IDC_STATIC_MAIL,103,147,162,8
+    CONTROL         "",IDC_RICHEDITHELP,"RICHEDIT",TCS_HOTTRACK | TCS_RAGGEDRIGHT | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,1,0,342,132
+    PUSHBUTTON      "帮助",IDC_BUTTONSWITCH,29,159,72,14
+    LTEXT           "Static",IDC_DYCREDITS,0,0,343,131,NOT WS_GROUP
+END
+
+IDD_SERIALAS_DIALOG DIALOGEX 0, 0, 418, 252
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "串口助手1.0"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,397,238,20,14
+    PUSHBUTTON      "配置端口",IDC_BTNPORTCONFIG,6,2,35,14
+    EDITTEXT        IDC_EDITSENDFILEPATH,117,221,156,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_RICHEDITREVDATA,"RICHEDIT",TCS_HOTTRACK | TCS_RAGGEDRIGHT | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,84,0,333,146
+    CONTROL         "",IDC_RICHEDITSENDDATA,"RICHEDIT",TCS_HOTTRACK | TCS_VERTICAL | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,117,153,300,62
+    LTEXT           "接收区-->",IDC_STATIC,46,26,36,8
+    CONTROL         "自动清空",IDC_CHECKAUTOCLEAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,40,71,10
+    PUSHBUTTON      "清空接收区",IDC_CLEARREVDATA,5,64,76,14
+    CONTROL         "十六进制显示",IDC_CHECKHEXDISPLAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,52,70,10
+    PUSHBUTTON      "保存显示数据",IDC_BTNSAVEFILE,4,97,53,14
+    PUSHBUTTON      "更改",IDC_BTNCHANGESAVEFILEPATH,58,97,24,14
+    PUSHBUTTON      "清空发送区",IDC_CLEARSENDDATA,64,201,50,14
+    EDITTEXT        IDC_EDITREVCOUNT,5,80,52,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "清除",IDC_BTNCLEARREVCOUNT,59,80,24,14,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDITSENDCOUNT,318,221,46,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "清除",IDC_BTNCLEARSENDCOUNT,369,221,23,14,0,WS_EX_STATICEDGE
+    CONTROL         "十六进制发送,以空格隔开",IDC_CHECKHEXSEND,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,4,167,112,14
+    CONTROL         "自动发送",IDC_CHECKAUTOSEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,185,46,10
+    LTEXT           "周期:",IDC_STATIC_STR_PERIOD,51,186,20,8
+    EDITTEXT        IDC_EDITSENDPERIOD,74,183,28,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    LTEXT           "ms",IDC_STATIC_STR_MS,106,186,9,8
+    PUSHBUTTON      "选择文件",IDC_SELECTSENDFILE,69,221,44,14
+    PUSHBUTTON      "发送文件",IDC_STARTSENDFILE,277,221,35,14
+    PUSHBUTTON      "打开串口",IDC_BTNOPENPORT,44,2,35,14
+    PUSHBUTTON      "关闭串口",IDC_BTNCLOSEPORT,6,23,35,14
+    PUSHBUTTON      "手动发送",IDC_MANUALSEND,4,201,45,14
+    EDITTEXT        IDC_STATICSAVEFILEPATH,5,114,78,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SAVEFILENAME,33,130,50,14,ES_AUTOHSCROLL
+    LTEXT           "文件名",IDC_STATIC,5,133,24,8
+    LTEXT           "nail",IDC_STATIC_NAIL,0,238,13,14
+    PUSHBUTTON      "帮助",IDC_MYHELP,394,221,23,14
+    COMBOBOX        IDC_COMBO1,9,221,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONFIGPORTDLG DIALOG  0, 0, 212, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置串口"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,99,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,99,50,14
+    LTEXT           "串口选择：",IDC_STATIC,7,9,41,8
+    COMBOBOX        IDC_COMBOPORT,62,8,48,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "只列出存在的串口",IDC_CHECKEXISTPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,9,80,10
+    LTEXT           "波特率：",IDC_STATIC,8,28,31,8
+    COMBOBOX        IDC_COMBOBAUDRATE,62,25,48,103,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "校验位：",IDC_STATIC,7,45,31,8
+    LTEXT           "数据位：",IDC_STATIC,7,60,31,8
+    LTEXT           "停止位：",IDC_STATIC,7,77,31,8
+    COMBOBOX        IDC_COMBOSTOPBITS,62,75,48,49,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBDATABITS,62,56,48,40,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOPARITY,62,41,48,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "配置并打开串口",IDC_BTNOK,77,99,59,14
+    PUSHBUTTON      "保存为缺省值",IDC_SAVEPORTCONFIG,116,25,68,14
+END
+
+IDD_DLGHELP DIALOG  0, 0, 232, 136
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,115,50,14
+END
+
+IDD_DLGABOUT DIALOG  0, 0, 295, 156
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,238,125,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "SerialAs Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SerialAs"
+            VALUE "LegalCopyright", "版权所有 (C) 2005"
+            VALUE "OriginalFilename", "SerialAs.EXE"
+            VALUE "ProductName", "SerialAs 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SERIALAS_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 417
+    END
+
+    IDD_CONFIGPORTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_DLGHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_DLGABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NAILOFF             BITMAP                  "res\\nailoff.bmp"
+IDB_NAILON              BITMAP                  "res\\nailon.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERIALAS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 7, 0
+0xbbd2, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xfeb6, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xfdc8, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xc4cb, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xe5ce, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xf9c1, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xdfc6, 0xc5ba, 0xfabb, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xcbb0, 0xc5ba, 0xfabb, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SerialAs(&A)..."
+    IDS_TITLE               "串口助手"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SerialAs.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
